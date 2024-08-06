@@ -5,35 +5,77 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | Interactive pricing component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
-  Simple, traffic-based pricing
-  Sign-up for our 30-day trial. No credit card required. 
+  <header>
+    <h1>Simple, traffic-based pricing</h1>
+    <p>Sign-up for our 30-day trial. No credit card required. </p>
+  </header>
 
-  Pageviews
-  $ /month
+  <main>
+    <form action="#">
+      <div class="range-container">
+        <div class="view-container">
+          <span class="view-container">
+            <span id="views">100K</span> Pageviews
+          </span>
+        </div>
 
-  Monthly Billing
-  Yearly Billing 25% discount
+        <br>
 
-  Unlimited websites
-  100% data ownership
-  Email reports
+        <input 
+          type="range"
+          min="0" 
+          max="100" 
+          step="1" 
+          aria-label="Select the number of pageviews for your plan" 
+          id="range-input"
+        >
 
-  Start my trial
+        <br>
+
+        <div class="price-container">
+          <span id="price">$16.00</span>
+          <span id="duration"> / month</span>
+        </div>
+
+      </div>
+
+      <div class="switch-container">
+        <span>Monthly Billing</span>
+        <label class="switch">
+          <input type="checkbox" aria-label="toggle billing duration" id="switch-input">
+          <span class="slider"></span>
+        </label>
+        <span>
+          Year Billing
+          <span class="yearly">
+            <span class="yearly-desktop">25% discount</span>
+            <span class="yearly-mobile">-25%</span>
+          </span>
+        </span>
+      </div>
+
+      <div class="feature-container">
+        <ul>
+          <li><img src="/images/icon-check.svg" alt="checked">Unlimited websites</li>
+          <li><img src="/images/icon-check.svg" alt="checked">100% data ownership</li>
+          <li><img src="/images/icon-check.svg" alt="checked">Email reports</li>
+        </ul>
+        <button type="submit" aria-label="Start my trial">Start my trial</button>
+      </div>
+    </form>
+  </main>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Francine Huang</a>.
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
