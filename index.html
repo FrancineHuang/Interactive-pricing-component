@@ -14,52 +14,45 @@
 
   <header>
     <h1>Simple, traffic-based pricing</h1>
-    <p>Sign-up for our 30-day trial. No credit card required. </p>
+    <p>Sign-up for our 30-day trial.<br> No credit card required.</p>
   </header>
-
   <main>
     <form action="#">
-      <div class="range-container">
-        <div class="view-container">
-          <span class="view-container">
-            <span id="views">100K</span> Pageviews
-          </span>
+        <div class="range-container">
+            <span class="view-container">
+              <span id="views">100K</span> Pageviews
+            </span>
+            <br>
+            <input type="range"
+                    min="0"
+                    max="80"
+                    step="1"
+                    aria-label="Select the number of pageviews for your plan"
+                    id="range-input">
+            <br>
+            <div class="price-container">
+              <span id="price">$16.00</span>
+              <span id="duration">/ month</span>
+            </div>
         </div>
 
-        <br>
-
-        <input 
-          type="range"
-          min="0" 
-          max="100" 
-          step="1" 
-          aria-label="Select the number of pageviews for your plan" 
-          id="range-input"
-        >
-
-        <br>
-
-        <div class="price-container">
-          <span id="price">$16.00</span>
-          <span id="duration"> / month</span>
+        <div class="switch-container">
+            <span>Monthly Billing</span>
+            <label class="switch">
+              <input type="checkbox"
+                      aria-label="toggle billing duration"
+                      id="switch-input">
+              <span class="slider"></span>
+            </label>
+            <span>Yearly Billing 
+              <span class="yearly">
+                <span class="yearly-mobile">-25%</span>
+                <span class="yearly-desktop">25% discount</span>
+              </span>
+            </span>
         </div>
 
-      </div>
-
-      <div class="switch-container">
-        <span>Monthly Billing</span>
-        <label class="switch">
-          <input type="checkbox" aria-label="toggle billing duration" id="switch-input">
-          <span class="slider"></span>
-        </label>
-        <span>
-          Year Billing
-          <span class="yearly">
-            <span class="yearly-desktop">25% discount</span>
-            <span class="yearly-mobile">-25%</span>
-          </span>
-        </span>
-      </div>
+        <hr>
 
       <div class="feature-container">
         <ul>

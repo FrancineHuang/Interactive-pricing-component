@@ -51,10 +51,6 @@ main{
     width: 100%;
     background: var(--white);
     padding: 2rem 1.5rem;
-    -webkit-border-radius: .5rem;
-    -moz-border-radius: .5rem;
-    -ms-border-radius: .5rem;
-    -o-border-radius: .5rem;
     border-radius: .5rem;
     box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
@@ -78,10 +74,6 @@ main form .range-container .view-container{
         var(--empty-slide-bar) 100%
         );
     margin: 2.25rem 0;
-    -webkit-border-radius: .5rem;
-    -moz-border-radius: .5rem;
-    -ms-border-radius: .5rem;
-    -o-border-radius: .5rem;
     border-radius: .5rem;
     outline: none;
     -webkit-appearance: none;
@@ -134,16 +126,12 @@ span .yearly{
     font-size: 10px;
     padding: .25rem .5rem;
     margin-left: .5rem;
-    -webkit-border-radius: .5rem;
-    -moz-border-radius: .5rem;
-    -ms-border-radius: .5rem;
-    -o-border-radius: .5rem;
     border-radius: .5rem;
 }
-.yearly--mobile{
+.yearly-mobile{
     display: inline;
 }
-.yearly--desktop{
+.yearly-desktop{
     display: none;
 }
 .switch-container .switch {
@@ -163,15 +151,7 @@ span .yearly{
     position: absolute;
     inset: 0;
     background: var(--toggle-bar);
-    -webkit-border-radius: 1.5rem;
-    -moz-border-radius: 1.5rem;
-    -ms-border-radius: 1.5rem;
-    -o-border-radius: 1.5rem;
     border-radius: 1.5rem;
-    -webkit-transition: all .2s ease-out;
-    -moz-transition: all .2s ease-out;
-    -ms-transition: all .2s ease-out;
-    -o-transition: all .2s ease-out;
     transition: all .2s ease-out;
     cursor: pointer;
 }
@@ -183,15 +163,7 @@ span .yearly{
     height: .75rem;
     width: .75rem;
     background: var(--white);
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
     border-radius: 50%;
-    -webkit-transition: all .2s ease-out;
-    -moz-transition: all .2s ease-out;
-    -ms-transition: all .2s ease-out;
-    -o-transition: all .2s ease-out;
     transition: all .2s ease-out;
 }
 #switch-input:hover + .slider{
@@ -201,10 +173,6 @@ span .yearly{
     background: var(--checkbox-active);
 }
 #switch-input:checked + .slider:before {
-    -webkit-transform: translate(1.25rem);
-    -moz-transform: translate(1.25rem);
-    -ms-transform: translate(1.25rem);
-    -o-transform: translate(1.25rem);
     transform: translate(1.25rem);
 }
 form hr{
@@ -238,10 +206,6 @@ ul li img{
     padding: .75rem 2.5rem;
     margin: 0 auto;
     border: none;
-    -webkit-border-radius: 1.5rem;
-    -moz-border-radius: 1.5rem;
-    -ms-border-radius: 1.5rem;
-    -o-border-radius: 1.5rem;
     border-radius: 1.5rem;
     cursor: pointer;
 }
@@ -321,10 +285,10 @@ ul li img{
         width: 1rem;
         height: 1rem;
     }
-    .yearly--mobile{
+    .yearly-mobile{
         display: none;
     }
-    .yearly--desktop{
+    .yearly-desktop{
         font-size: 12px;
         display: inline;
     }
