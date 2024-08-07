@@ -34,9 +34,9 @@ function handleRangeInput(e) {
 function plan(inputValue) {
     for (let i = 0; i < value.length; i++) {
         if (inputValue >= value[i]) {
-            pageView.innerText = view[i]
-            price.innerText = `$${(switchInput.checked ? cost[i] * 0.75 : cost[i]).toFixed(2)}`
-            duration.innerText = switchInput.checked ? " / year" : " / month"
+            pageView.innerText = view[i];
+            price.innerText = `$${(switchInput.checked ? cost[i] * 0.75 : cost[i]).toFixed(2)}`;
+            duration.innerText = switchInput.checked ? " / year" : " / month";
         }
     }
 }
